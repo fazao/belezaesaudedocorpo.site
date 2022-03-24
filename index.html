@@ -28,7 +28,8 @@
     </style>
     
     <!-- Meta Pixel Code -->
-    <script>
+    
+    <!--<script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -45,8 +46,9 @@
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=671840113939919&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    /></noscript> -->
+
+    <!-- End Meta Pixel Code --> 
     
 
     <!-- Global site tag (gtag.js) - Google Ads: 10871102503 -->
@@ -61,12 +63,24 @@
 
 
 
-    <!--  Event snippet for Website sale conversion page -->
+
+
+    <!-- Event snippet for Compras conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
+      function gtag_report_conversion(url) {
+      var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+        }
+      };
       gtag('event', 'conversion', {
       'send_to': 'AW-10871102503/w-dSCPOTr6oDEKe4378o',
-      'transaction_id': ''
+      'transaction_id': '',
+      'event_callback': callback
       });
+      return false;
+      }
     </script>
 
 

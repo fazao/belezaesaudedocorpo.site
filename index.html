@@ -52,8 +52,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M57K88F"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    
-       
+ 
+  
+<!-- Evento Botão eu Quero Acesso -->       
 <script type="4281f94f5c3a9caf277f36c1-text/javascript">
 function gtag_report_conversion(url) {
 var callback = function () {
@@ -68,7 +69,8 @@ gtag('event', 'conversion', {
 return false;
 }
 </script>
-    
+
+<!-- Evento Compra -->      
 <script type="4281f94f5c3a9caf277f36c1-text/javascript">
 function gtag_report_conversion(url) {
 var callback = function () {
@@ -85,6 +87,24 @@ return false;
 }
 </script>
 
+<!-- Event snippet for Compra Efetuada -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10871102503/rAw5CLes3qwDEKe4378o',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+  
+  
 <header class="py-4">
 <div class="container">
 <div class="row justify-content-center">

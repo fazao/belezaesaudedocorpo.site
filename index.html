@@ -1,80 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/com.css">
 
-<link rel="stylesheet" href="./assets/css/com.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M57K88F');</script>
+    <!-- End Google Tag Manager -->    
 
- 
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=TvLAz4arl63qgDAFo__9TFjLZUWSKbEy1ZcfQAygLNBTVAnA6hefqI8a_oiL1CRdg8_qWzKoHOzdcvZg2W-u0XvnzJV8MEElOkuuGxCx_yNAw3sgaCEJjPqF-JNsRAvwtW8jW-LMA_PJE4RrNRgqUGNWMSN-2kW10T14V7S5LXvdwSkNgf--y6ajYgEl2lHR47PZGcCsjDo9LEz_ulafeSTyYuswpzBn9C1vijZIsBGak6WMF1ZEBp8X1laX75M0fn6ttAXYwWPoHpXLUcaOD5BU9dU70Szsj7eV4NWC3sWKsaubA-BOCRvyyqQReEIDPjbIC1xdbU0BkaANkCXtrrVdcT-qu1hGSvjxeJntv8T0UhvnQwy6WvX35vOLi4OQ4kHpWAhGZs6vfCGB9POu3hoABA2VjjODgXiTtf5SnqpSzBr8qL88DG8Xmrc9l58RTSnUR51Mtb2URoK8x8RFQVsDi_wbpoyDt16v1MywAZBbeuEpqTkydr0zlUS-2CKoDEjlyTSr8O2tXR3rAGJtpFvNBq0SYq8xPIWETaSmx-PV_uOfX3xAQJNQ6msPVe23p-j9MDuwy7ecNw0dkIg75C8z2OrcuoopBzD_LGj8mdhhKoZoSMDl_dh65X4z0qKyNRGOr3s-fdnRMofhDfj8tiUZqpA5Pu5cZF_I5do_2KNmajpbSkuJ5Sl3RN5L7el1tNyCwGN_dXKFgLKlGpIdIe0Z3JQH0-HTCVxvCJwrLRH8h40jNE7gpdSRLtWaSjA7p_AP3aaMwUBYN5JafDIJRfQ-Dsp2ryADEBNsmXywlW4hDvYEk68MJymZZ7hHKTuU794w8EC8x3nFOqKoTJI8w94VhDKEv-6aul-YXsYFB2-v-lxyNn8_nSfxC4RT7CuQ8pXv7BUMQO6GVtpM-AprhpV3DyLFa3jZBgiWo6zTKXU-qY26gWdvQ487wJs69GK5UdY0qT-eE-vBTueOI_rPm6oTylfl-CHY-CxLiIwpVqvNGIvwQ99TYocL856hm0C15U-YcRcsM363fRWfxrDXMy1tZebZ_PBDflNTBlOOeR9uMJnbvkyPw9AVB0WMKDVXDFhlC72ZEaC2p6ctcetmjqMQa683IUaLOH8rIhTSF24EhbLnDZhNnMXw1miNnXaG-Kf5_Wh9o84qLsA58tXxW2lo0LhMSor_nqUlVjBRgZZtws9SuMCLQSfZpgc5E_0Ag_IdYcM1VMu1AWPuCA3f2s5ZP0TjBZ3Lu7i-85I3nCjV63sqe3yIDpspcG2D083RdV2GHa4AJxfjYl6qedM4mwNGPXA7GUYoUFWRYQKIMhaXcryhFh2uQktANeehFxogiqRzvKDmQf399U1OI39J3huYw8uHw_eq-uQWYm1nO5HltlohzrBBPZoXfPEjNylkxVbLsZTyRaNi5f-_F49N2w" charset="UTF-8">
-</script>
-
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M57K88F');</script>
-<!-- End Google Tag Manager -->    
-
-<!-- Global site tag (gtag.js) - Google Ads: 10871102503 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10871102503"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-10871102503');
-</script>
+    <!-- Global site tag (gtag.js) - Google Ads: 10871102503 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10871102503"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-10871102503');
+    </script>
   
-<!-- Event snippet for Botão Quero Ter Acesso conversion page -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+    <!-- Event snippet for Botão Quero Ter Acesso conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10871102503/dU0OCK-KsqwDEKe4378o',
+          'event_callback': callback
+      });
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-10871102503/dU0OCK-KsqwDEKe4378o',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+    </script>
 
-<!-- Event snippet for Compra Efetuada -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+    <!-- Event snippet for Compra Efetuada -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10871102503/rAw5CLes3qwDEKe4378o',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-10871102503/rAw5CLes3qwDEKe4378o',
-      'transaction_id': '',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>  
-  
-    
-<title>Protocolo Zero Barriga</title>
+    </script>
 
-<style type="text/css">
+
+
+    <!-- Título da Página -->
+    <title>Protocolo Zero Barriga</title>
     
-      header {
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ih_2SUE-QGNqFvj00qeG7mWaRxHNAT5vAXWNrJgOWHnttPNSehEg89CGelGgE_3Z10C4BPaxVCfYSPr6-k3D-MhRxvtcz5YGPTUxloGa7pzbL5ry4WTd6zbO_N5oxCGca_0lB1zEjaUCJQPyMLCBFu2Q5HloRyC6SG-AXEoMLzGPlEsPRfyPy-VVok0fgRS7gycGsCNF-BSEJI6OrNnnYgpBIStxWcNLN8oUYP8_0lfn67eP1ZdA8Z8-PYPbvt7rT4umNY47sQKfstq9-m1p8FHu6URF779iq5JFCm2Dg6VHn8dTi9BMUfl8Ih7m4rQ_8kUbCidgeUYqcWah0AQKfqJj5AjFXkjEl-KyN8fv_mXy4w7-a0dbBCkA2mm2TXPPdsa7eHlRUvxy6OQ84xvaYR9QIhlYoEk8tbLQnzTOUp0w4RkstVfGJRHVRYHguYAAVDFrwM-4pjCe1Qxdnaj8bte_AMERfTZB7D-l_rYxGN03laYFsWrnBNx7auBl_ToTeGwd4f7DB6tCmHpFjQST0tx1WeNy4jYmhPZKZTRZP423ZeqpYQwTKqi6z8C2b9FNnmCbaaikvhr55RyEInR2fvSNlJo3V2KfiLKkTuYIom4EdnNcdIzrrHEM4BhTvAGOKgT5BuUc31K2r8UJ_8AsbDkVucgTsKXchsA2d0AfWjwEtrckJMuJ1L-Bl0u8dX2hHbPeJ0CqCgXn3ShTZGOmtSIz_F4KCuHVjMgQon-Y1DORB-7LywVt2vrOc9RCFtOa9h1vHGAr5yHaQINz-A8uDv2vrj7oUtuXIk2FZTbGpZDdu1y0TfuzK9BWfoY_abNlGdj_tshgqCgZKgLzbRxa4DpOARmUMGxuUW6g1n6Yj-1tVsQBePoEYdqBUcI4t7Z4SJJTw3a522-3QfmUFbxik7PYAUwenltf_H7NET38Bv3eb6dir6IEmxRcR5CiIDM9qIl5OhWwiHiiTzxaif4DcjK0rz1jqRWawkZnqiw3ynJH8TFaPenkjzue5s-LBN89vJVjdqa30ndetb7T-VRWHbYiPxXerMJ6Ixn9vZ5OeL69tiK1nvZVVeOaV92Bcb5Wle_qNp6jQvXOGTVTowYPEvl1-B65pNftozB8GlOuEkJDX87ZvaCkRX3H8fzYMqG_aXI5uNz8dDUEp9CDXEbwoPwtMTAnQSJc4fo_MrpZGeNeSQ7GqIG554eDmMWNXkavvh8FBe_j8ya0Va8jdkLWQ7bRD-m1tKpRw21ZNdLKWvqaXoOv-BpHPTyRSaHWS2KvTD5VYxiQLoIF8DP-QEWSaIXFjzM8RTf1D12czNeJcejTWhKtE-xlTxXV0nzC6vouCmO700Zp3cw9RM_cddFj3JV2nejmuRYaVLYon40iYybxt9wBK133oUaNH6SeInlyref68EgYrfIUmm-RQuHHn1S1eolbZexcl1ACkDqi2nY" charset="UTF-8"></script><style type="text/css">
+      body {
         color: white;
         background-image: url("assets/img/bg.jpeg");
         background-color: rgba(0, 0, 0, 0.6);
@@ -85,53 +79,83 @@ function gtag_report_conversion(url) {
       }
     </style>
 
-</head>
-<body>
+    <!-- Global site tag (gtag.js) - Google Ads: 10871102503 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10871102503"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-10871102503');
+    </script>
+
+
+
+    <!-- Event snippet for Website sale conversion page -->
+    <script>
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10871102503/w-dSCPOTr6oDEKe4378o',
+          'transaction_id': ''
+      });
+    </script>
+
+  </head>
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M57K88F"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  
+    <header class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+        
+            <!-- Imagem Ultrasecreto -->
+            <img class="img-fluid" src="./assets/img/ultrasecreto.svg">
+
+            <!-- Headline -->
+            <h3 class="my-4"><b>Assista Agora Para Saber Como Uma Simples Vitamina de 6 Ingredientes Pode Derreter Muita Gordura</b></h3>
+
+            <!-- VSL -->
+          <script type="text/javascript" id="scr_6236597396ef4b000926269f">var s=document.createElement("script");s.src="https://cdn.converteai.net/c27f1fc7-8a84-4e3e-8624-f1095a9dbfae/players/6236597396ef4b000926269f/player.js",s.async=!0,document.head.appendChild(s);</script>
+        
+            <!-- Botão -->
+            <div id="cta1" class="mt-4 d-none">
+              <a href="https://pay.kiwify.com.br/XOUfD8x" class="a-btn" style="text-decoration: none;">
+                <span class="span-btn">QUERO OBTER ACESSO!</span>
+                <span class="span-btn2">(Atenção: Vagas Limitadas)</span>
+              </a>
+            </div>
+
+            <!-- Termos de Uso e Política de Privacidade -->
+            <div class="text-white mt-4"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 1751400); // temporização da Call to Action (em milissegundos)
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./assets/js/com.js"></script>
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M57K88F"
+        height="0" width="0" style="display:none;visibility:hidden">  
+      </iframe>
+    </noscript>
+
+    <!-- End Google Tag Manager (noscript) -->
     
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M57K88F"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-   
-<header class="py-4">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-8 text-center">
-
-<img class="img-fluid" src="./assets/img/ultrasecreto.svg">
-
-<h3 class="my-4"><b>Shake De Apenas 6 Ingredientes Tem Ajudado Muitas Mulheres A Emagrecer</b></h3>
-
-<!-- VSL --> 
-
-<script type="text/javascript" id="scr_6236597396ef4b000926269f">var s=document.createElement("script");s.src="https://cdn.converteai.net/c27f1fc7-8a84-4e3e-8624-f1095a9dbfae/players/6236597396ef4b000926269f/player.js",s.async=!0,document.head.appendChild(s);</script>
-
-
-<div id="cta1" class="mt-4 d-none">
-<a href="https://pay.kiwify.com.br/XOUfD8x" class="a-btn" style="text-decoration: none;">
-<span class="span-btn">QUERO OBTER ACESSO!</span>
-<span class="span-btn2">(Atenção: Vagas Limitadas)</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</header>
-
-<footer class="bg-dark py-3 text-center">
-<div class="text-white"><a href="termos.html" class="text-white">Termos de Uso</a> | <a href="privacidade.html" class="text-white">Política de Privacidade</a></div>
-</footer>
-
-<script type="text/javascript">
-   setTimeout(() => {document.getElementById("cta1").classList.remove("d-none")}, 1755000); // temporização da Call to Action (em milissegundos)
-</script> 
-
-    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
-    
-<script src="./assets/js/com.js"></script>
-
-</body>
+  </body>
 </html>
